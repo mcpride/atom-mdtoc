@@ -84,7 +84,7 @@ class TocView
 
 
   _deleteToc: () ->
-    @pane.setTextInBufferRange [[@open,0], [@close,14]], ""
+    @pane.setTextInBufferRange [[@open,0], [@close,16]], ""
 
 
   # ----------------------------------------------------------------------------
