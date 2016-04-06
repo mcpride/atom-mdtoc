@@ -79,7 +79,7 @@ Pull requests and stars are always welcome. For bugs and feature requests, pleas
 
 ## License
 
-Copyright © 2016 [Marco Stolze](https://github.com/mcpride). Released under the [MIT license](LICENSE).
+Copyright © 2016 [Marco Stolze](https://github.com/mcpride). Released under the [MIT license](LICENSE.md).
 
 ## Repeated heading example
 
