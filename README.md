@@ -4,9 +4,9 @@ Generate a markdown TOC (table of contents) in [atom editor](https://atom.io/) u
 
 # Table Of Contents
 
-<!-- MDTOC maxdepth:6 firsth1:0 numbering:1 flatten:0 bullets:0 updateOnSave:1 -->
+<!-- MDTOC maxdepth:6 firsth1:0 numbering:1 flatten:0 bullets:0 updateOnSave:0 -->
 
-1 &nbsp; [Installation](#installation)   
+1 &nbsp; [Installation1](#installation1)   
 2 &nbsp; [Features](#features)   
 &nbsp;&nbsp;&nbsp;2.1 &nbsp; [Example (this Table Of Contents)](#example--this-table-of-contents-)   
 3 &nbsp; [Contributing](#contributing)   
@@ -26,8 +26,6 @@ Generate a markdown TOC (table of contents) in [atom editor](https://atom.io/) u
 <!-- /MDTOC -->
 
 ## Installation
-
-```
 apm install atom-mdtoc
 ```
 
