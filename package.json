@@ -9,7 +9,10 @@
     "atom"
   ],
   "activationCommands": {
-    "atom-workspace": ["atom-mdtoc:insert", "atom-mdtoc:delete"]
+    "atom-workspace": [
+      "atom-mdtoc:insert",
+      "atom-mdtoc:delete"
+    ]
   },
   "repository": "https://github.com/mcpride/atom-mdtoc",
   "author": "mcpride (Marco Stolze)",
