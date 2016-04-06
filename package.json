@@ -1,7 +1,7 @@
 {
   "name": "atom-mdtoc",
   "main": "./lib/atom-mdtoc",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Generate a markdown TOC (table of contents) in atom editor using Markdown-TOC and Remarkable from Jon Schlinkert.",
   "keywords": [
     "markdown",
