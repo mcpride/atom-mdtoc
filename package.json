@@ -1,0 +1,23 @@
+{
+  "name": "atom-mdtoc",
+  "main": "./lib/atom-mdtoc",
+  "version": "0.1.0",
+  "description": "Generate a markdown TOC (table of contents) in atom editor using Remarkable from Jon Schlinkert.",
+  "keywords": [
+    "markdown",
+    "toc",
+    "atom"
+  ],
+  "activationCommands": {
+    "atom-workspace": ["atom-mdtoc:insert", "atom-mdtoc:delete"]
+  },
+  "repository": "https://github.com/mcpride/atom-mdtoc",
+  "author": "mcpride (Marco Stolze)",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "markdown-toc": "^0.12.5"
+  }
+}
