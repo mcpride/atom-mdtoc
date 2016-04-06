@@ -26,6 +26,8 @@ Generate a markdown TOC (table of contents) in [atom editor](https://atom.io/) u
 <!-- /MDTOC -->
 
 ## Installation
+
+```
 apm install atom-mdtoc
 ```
 
