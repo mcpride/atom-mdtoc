@@ -2,6 +2,8 @@
 
 Generate a markdown TOC (table of contents) in [atom editor](https://atom.io/) using [Markdown-TOC](https://github.com/jonschlinkert/markdown-toc) and [Remarkable](https://github.com/jonschlinkert/remarkable).
 
+![screenshot](https://github.com/mcpride/atom-mdtoc/blob/master/screenshot.gif)
+
 # Table Of Contents
 
 <!-- MDTOC maxdepth:6 firsth1:0 numbering:1 flatten:0 bullets:0 updateOnSave:0 -->
