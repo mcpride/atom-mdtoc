@@ -99,26 +99,34 @@ class TocView
     mytoc =  toc(str, {firsth1: @options.firsth1 is 1, maxdepth: @options.maxdepth})
     @__initNumbers(mytoc)
     @tocContent = ''
+
     for i of mytoc.json
-      heading = mytoc.json[i]
+      heading = mytoc.json[i]      # loop begin
       level = heading.lvl
-      if @options.firsth1 isnt 1
+      maxdepth = @options.maxdepth
+
+      if @options.firsth1 isnt 1   # ignore first level
         level = heading.lvl-1
+        maxdepth = @options.maxdepth+1
         if level < 1
           continue
-      @options.firsth1 is 1
-      if @options.maxdepth < heading.lvl
+
+      if maxdepth < heading.lvl    # maxdepth reached
         continue
-      if @options.flatten != 1
-        if @options.bullets != 1
-          @tocContent += '&nbsp;&nbsp;&nbsp;'.repeat(level - 1)
+
+      if @options.flatten isnt 1   # tree view
+
+        if @options.bullets isnt 1
+          @tocContent += '&emsp;'.repeat(level - 1)
         else
           @tocContent += '   '.repeat(level - 1) + '- '
-      else
-        if @options.bullets == 1
+
+      else                         # flat list view
+        if @options.bullets is 1
           @tocContent += '- '
-      if @options.numbering == 1
-        @tocContent += @__incNumbers(level)+' &nbsp; '
+
+      if @options.numbering is 1   # use numbers
+        @tocContent += @__incNumbers(level)+' '
       @tocContent += '['+heading.content+'](#'+heading.slug+')'
       @tocContent +='   \n'
 
@@ -143,10 +151,7 @@ class TocView
       @numbers[i] = 0
     result = ''
     for i in [1..level]
-      if result == ''
-        result = new String @numbers[i]
-      else
-        result += '.'+new String @numbers[i]
+      result += new String @numbers[i]+'.'
     return result
 
 
