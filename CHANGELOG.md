@@ -1,3 +1,5 @@
+## 0.8.0 - Minor fixes
+* fix links with multiple "-" chars
 ## 0.7.0 - Minor fixes
 * Numbering fixed
 * maxdepth with firsth1=0 option fixed

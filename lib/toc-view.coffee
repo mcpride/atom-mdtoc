@@ -127,7 +127,7 @@ class TocView
 
       if @options.numbering is 1   # use numbers
         @tocContent += @__incNumbers(level)+' '
-      @tocContent += '['+heading.content+'](#'+heading.slug+')'
+      @tocContent += '['+heading.content+'](#'+@___fixSlugQuirks(heading.slug)+')'
       @tocContent +='   \n'
 
 
@@ -201,6 +201,19 @@ class TocView
       @lines = @pane.getBuffer().getLines()
     else
       @lines = []
+
+
+  ___fixSlugQuirks: (s) ->
+    result = ''
+    parts = s.split("-")
+    for part in parts
+      if part is ''
+        continue
+      if result is ''
+        result = part
+      else
+        result += '-' + part
+    return result
 
 
   String::repeat = (n) -> Array(n+1).join(this)

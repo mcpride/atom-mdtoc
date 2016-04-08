@@ -10,7 +10,7 @@ Generate a markdown TOC (table of contents) in [atom editor](https://atom.io/) u
 
 1. [Installation](#installation)   
 2. [Features](#features)   
-&emsp;2.1. [Example (this Table Of Contents)](#example--this-table-of-contents-)   
+&emsp;2.1. [Example (this Table Of Contents)](#example-this-table-of-contents)   
 3. [Contributing](#contributing)   
 4. [Author](#author)   
 5. [License](#license)   
@@ -51,7 +51,7 @@ apm install atom-mdtoc
 
   - 1. [Installation](#installation)   
   - 2. [Features](#features)   
-     - 2.1. [Example (this Table Of Contents)](#example--this-table-of-contents-)   
+     - 2.1. [Example (this Table Of Contents)](#example-this-table-of-contents)   
   - 3. [Contributing](#contributing)   
   - 4. [Author](#author)   
   - 5. [License](#license)   
