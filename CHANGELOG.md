@@ -1,3 +1,5 @@
+## 0.8.1 - Minor fix
+* bugfix #1: Headlines using colons (:) receive wrong target anchor 
 ## 0.8.0 - Minor fixes
 * fix links with multiple "-" chars
 ## 0.7.0 - Minor fixes
