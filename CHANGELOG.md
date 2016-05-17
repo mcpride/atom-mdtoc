@@ -1,5 +1,7 @@
+## 0.8.2 - Minor fix
+* Upgrade to markdown-toc 0.12.10
 ## 0.8.1 - Minor fix
-* bugfix #1: Headlines using colons (:) receive wrong target anchor 
+* bugfix #1: Headlines using colons (:) receive wrong target anchor
 ## 0.8.0 - Minor fixes
 * fix links with multiple "-" chars
 ## 0.7.0 - Minor fixes
