@@ -1,3 +1,5 @@
+## 0.8.4 - Minor fix
+* Fixes an error in with string replace calls
 ## 0.8.3 - Minor fix
 * Upgrade to markdown-toc 0.12.11
 ## 0.8.2 - Minor fix
