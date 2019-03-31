@@ -4,6 +4,8 @@ TocView = require './toc-view'
 module.exports = AtomMdtoc =
 
   activate: (state) ->
+    tocview = new TocView(atom.workspace.getActivePaneItem())
+    tocview.init()
     this.subscriptions = new CompositeDisposable
     this.subscriptions.add atom.commands.add 'atom-workspace',
       'atom-mdtoc:insert': => this.insert()
