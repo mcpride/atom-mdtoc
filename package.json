@@ -14,6 +14,11 @@
       "atom-mdtoc:delete"
     ]
   },
+  "activationHooks": [
+    "language-gfm:grammar-used",
+    "language-gfm-enhanced:grammar-used",
+    "language-markdown:grammar-used"
+  ],
   "repository": "https://github.com/mcpride/atom-mdtoc",
   "author": "mcpride (Marco Stolze)",
   "license": "MIT",
