@@ -24,6 +24,11 @@ class TocView
   # main methods (highest logic level)
 
 
+  init: ->
+    if @_hasToc()
+      @_readToc()
+
+
   insert: ->
     if @_hasToc()
       @_deleteToc()
@@ -41,7 +46,6 @@ class TocView
     if @_hasToc()
       @_deleteToc()
       @pane.setTextInBufferRange [[@open,0], [@open,0]], @_createToc()
-
 
 
   # ----------------------------------------------------------------------------
@@ -73,7 +77,7 @@ class TocView
     return false
 
   # embed list with the open and close comment:
-  # <!-- TOC --> [list] <!-- /TOC -->
+  # <!-- MDTOC --> [list] <!-- /MDTOC -->
   _createToc: () ->
     @__updateTocContent()
     text = []
@@ -81,6 +85,10 @@ class TocView
     text.push @tocContent
     text.push "<!-- /MDTOC -->"
     return text.join "\n"
+
+
+  _readToc: () ->
+    @__updateTocContent()
 
 
   _deleteToc: () ->
